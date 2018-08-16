@@ -1,4 +1,4 @@
-PROJ ?= {{ cookiecutter.project_slug }}
+PROJ ?= {{ cookiecutter.project_package }}
 PGPIDENT ?= "Faust Security Team"
 PYTHON ?= python
 PYTEST ?= py.test

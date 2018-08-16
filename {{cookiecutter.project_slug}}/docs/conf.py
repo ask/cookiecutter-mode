@@ -6,13 +6,13 @@ from sphinx_celery import conf
 sys.path.append('.')
 
 globals().update(conf.build_config(
-    '{{ cookiecutter.project_slug }}', __file__,
+    '{{ cookiecutter.project_package }}', __file__,
     project='{{ cookiecutter.project_name }}',
     # version_dev='2.0',
     # version_stable='1.4',
     canonical_url='http://{{ cookiecutter.project_slug }}.readthedocs.io',
     webdomain='',
-    github_project='{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}',
+    github_project='{{ cookiecutter.github_repo }}',
     copyright='{{ cookiecutter.year }}',
     html_logo='images/logo.png',
     html_favicon='images/favicon.ico',

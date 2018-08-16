@@ -12,6 +12,7 @@ except (AttributeError, ImportError):
 from setuptools import find_packages, setup
 
 NAME = '{{ cookiecutter.project_slug }}'
+PACKAGE = '{{ cookiecutter.project_package }}'
 EXTENSIONS = set()
 E_UNSUPPORTED_PYTHON = '%s 1.0 requires %%s %%s or later!' % (NAME,)
 
@@ -58,7 +59,7 @@ def add_doc(m):
 
 pats = {re_meta: add_default, re_doc: add_doc}
 here = Path(__file__).parent.absolute()
-with open(here / NAME / '__init__.py') as meta_fh:
+with open(here / PACKAGE / '__init__.py') as meta_fh:
     meta = {}
     for line in meta_fh:
         if line.strip() == '# -eof meta-':
@@ -125,7 +126,7 @@ setup(
     packages=find_packages(exclude=['ez_setup', 't', 't.*']),
     include_package_data=True,
     # PEP-561: https://www.python.org/dev/peps/pep-0561/
-    package_data={NAME: ['py.typed']},
+    package_data={PACKAGE: ['py.typed']},
     zip_safe=False,
     install_requires=reqs('default.txt'),
     tests_require=reqs('test.txt'),

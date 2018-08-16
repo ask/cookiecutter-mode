@@ -8,7 +8,7 @@ include setup.cfg
 include setup.py
 recursive-include docs *
 recursive-include examples *
-recursive-include {{ cookiecutter.project_slug }} *.py *.html *.typed
+recursive-include {{ cookiecutter.project_package }} *.py *.html *.typed
 recursive-include requirements *.txt *.rst
 
 recursive-exclude * __pycache__

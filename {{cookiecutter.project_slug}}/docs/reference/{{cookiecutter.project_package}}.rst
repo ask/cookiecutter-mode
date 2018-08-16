@@ -1,11 +1,11 @@
 =====================================================
- ``{{ cookiecutter.project_slug }}``
+ ``{{ cookiecutter.project_package }}``
 =====================================================
 
 .. contents::
     :local:
-.. currentmodule:: {{ cookiecutter.project_slug }}
+.. currentmodule:: {{ cookiecutter.project_package }}
 
-.. automodule:: {{ cookiecutter.project_slug }}
+.. automodule:: {{ cookiecutter.project_package }}
     :members:
     :undoc-members:

@@ -11,7 +11,7 @@ from typing import Any, Mapping, NamedTuple, Sequence
 __version__ = '{{ cookiecutter.version }}'
 __author__ = '{{ cookiecutter.full_name }}'
 __contact__ = '{{ cookiecutter.email }}'
-__homepage__ = 'https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}'
+__homepage__ = 'https://github.com/{{ cookiecutter.github_repo }}'
 __docformat__ = 'restructuredtext'
 
 # -eof meta-
@@ -39,7 +39,7 @@ del(re)
 
 
 # Import stuff here
-# from {{ cookiecutter.project_slug }} import Foo
+# from {{ cookiecutter.project_package }} import Foo
 
 __all__ = [
     #'Foo',

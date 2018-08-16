@@ -13,4 +13,4 @@
 .. toctree::
     :maxdepth: 1
 
-    {{ cookiecutter.project_slug }}
+    {{ cookiecutter.project_package }}
