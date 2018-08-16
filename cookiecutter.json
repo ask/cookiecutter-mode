@@ -3,7 +3,7 @@
     "email": "be-you@example.com",
     "project_name": "Boilerplate",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
-    "project_package": " {{ cookiecutter.project_slug }}.replace('-', '_')",
+    "project_package": "{{ cookiecutter.project_slug.replace('-', '_') }}",
     "project_short_description": "Created with cookiecutter-mode",
     "year": "2018",
     "version": "1.0.0",
