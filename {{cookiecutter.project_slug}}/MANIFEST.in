@@ -1,0 +1,16 @@
+include AUTHORS.rst
+include Changelog.rst
+include CODE_OF_CONDUCT.rst
+include LICENSE
+include README.rst
+include MANIFEST.in
+include setup.cfg
+include setup.py
+recursive-include docs *
+recursive-include examples *
+recursive-include {{ cookiecutter.project_slug }} *.py *.html *.typed
+recursive-include requirements *.txt *.rst
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude * .*.sw[a-z]
